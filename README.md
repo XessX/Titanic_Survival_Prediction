@@ -1,42 +1,62 @@
-# Titanic_Survival_Prediction
-This project is an end-to-end machine learning pipeline that predicts whether a passenger survived the Titanic disaster, using the famous Titanic dataset. It covers everything from exploratory data analysis to model deployment and custom predictions.
+# 🚢 Titanic Survival Prediction (Machine Learning Portfolio Project)
 
-# 🚢 Titanic Survival Prediction - Machine Learning Project
-
-This project is an end-to-end machine learning pipeline that predicts whether a passenger survived the Titanic disaster, using the famous Titanic dataset. It covers everything from exploratory data analysis to model deployment and custom predictions.
+This project presents a full end-to-end machine learning pipeline for predicting passenger survival on the Titanic using Python, Scikit-Learn, and Pandas.
 
 ---
 
-## 📊 Project Highlights
+## 📊 Dataset
+The [Titanic dataset](https://www.kaggle.com/competitions/titanic) is a classic binary classification problem used in Kaggle competitions.
 
-- Exploratory Data Analysis (EDA) with visualizations
-- Data cleaning and missing value imputation
-- Feature engineering (including age group categorization)
-- Categorical encoding (Sex, Embarked, AgeGroup)
-- Model training using:
-  - Logistic Regression
-  - Random Forest Classifier
-- Performance metrics:
-  - Accuracy, Precision, Recall, F1 Score
-  - Confusion Matrix (visualized)
-- Custom prediction function for new passengers
-- Model saving and reloading with `joblib`
+- `891` rows × `12` features
+- Includes passenger age, class, gender, fare, family aboard, etc.
 
 ---
 
-## 🧠 Technologies & Libraries
-
-- Python 3.x
-- pandas, numpy
-- seaborn, matplotlib
-- scikit-learn
-- joblib
+## 🎯 Problem Statement
+> Can we predict if a passenger survived the Titanic disaster based on available features?
 
 ---
 
-## 🛠 How to Run This Project
+## 🧠 Skills Demonstrated
+- Exploratory Data Analysis (EDA)
+- Data Cleaning (missing values, encoding, imputation)
+- Feature Engineering (`AgeGroup`, one-hot encoding)
+- Model Training (Random Forest, Logistic Regression)
+- Model Evaluation (Accuracy, Precision, Recall, F1, Confusion Matrix)
+- Saving & Reloading Models
+- Predicting on Custom User Input
 
-1. Clone the repository:
+---
+
+## ⚙️ Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| `pandas` | Data processing |
+| `matplotlib`, `seaborn` | Visualization |
+| `scikit-learn` | Modeling, scaling, evaluation |
+| `joblib` | Save & reload models |
+
+---
+
+## 📈 Final Results (Random Forest)
+
+| Metric | Score |
+|--------|-------|
+| Accuracy | ~85% |
+| Precision | 85% |
+| Recall | 77% |
+| F1 Score | 80% |
+
+✅ Logistic Regression also included for comparison.
+
+---
+
+## 🧪 Run it Yourself
+
 ```bash
-git clone https://github.com/your-username/titanic-ml-project.git
-cd titanic-ml-project
+# Requirements
+pip install pandas numpy scikit-learn seaborn matplotlib joblib
+
+# Run the notebook
+jupyter notebook Titanic_Survival_Prediction_Portfolio.ipynb
