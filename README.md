@@ -60,3 +60,17 @@ pip install pandas numpy scikit-learn seaborn matplotlib joblib
 
 # Run the notebook
 jupyter notebook Titanic_Survival_Prediction_Portfolio.ipynb
+
+
+## 📲 Streamlit App (Local Only)
+
+This project includes a fully functional Streamlit app that allows users to interact with the model by inputting passenger data and seeing real-time survival predictions.
+
+### ▶️ Run It Locally
+
+To launch the app on your machine:
+
+```bash
+pip install streamlit
+streamlit run app.py
+
